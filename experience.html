@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<title>MY EXPERIENCE</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="style1.css" />
+
+
+<style>
+html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+</style>
+<body>
+    <marquee>To Hear The Background Sound Please Use Internet Explorer</marquee>
+<div class:"container">
+<br>
+<br>
+  <div class="navigation-bar">
+    <div id="navigation-container" class="cf">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="biodata.html">Biodata</a></li>
+        <li><a class="active" href="experience.html">Experience</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="family.html">Family</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </div>
+  </div>
+   <!-- Slideshow -->
+   <div class="w3-container">
+    <div class="w3-display-container mySlides">
+      <img src="image/team3.jpeg" style="width:100%">
+      <div class="w3-display-bottommiddle w3-container w3-padding-32">
+        <span class="w3-white w3-padding-large w3-animate-bottom">MAJLIS PERWAKILAN PELAJAR</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="image/team2.jpeg" style="width:100%">
+      <div class="w3-display-bottommiddle w3-container w3-padding-32">
+        <span class="w3-white w3-padding-large w3-animate-bottom">INFORMA CLUB</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="image/team6.jpeg" style="width:100%">
+      <div class="w3-display-bottommiddle w3-container w3-padding-32">
+        <span class="w3-white w3-padding-large w3-animate-bottom">UiTM Kedah Football Kelab(UKFC)</span>
+      </div>
+    </div>
+   
+    <!-- Slideshow next/previous buttons -->
+    <div class="w3-container w3-dark-grey w3-padding w3-xlarge">
+      <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
+      <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
+    
+      <div class="w3-center">
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+      </div>
+    </div>
+  </div>
+  <script>
+    // Slideshow
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demodots");
+      if (n > x.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = x.length} ;
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-white", "");
+      }
+      x[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " w3-white";
+    }
+    </script>
+    <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="image/me6.jpeg" class="w3-round w3-image w3-opacity-high" alt="Table Setting" width="600" height="500">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">STUDENT REPRESENTATIVE COUNCIL</h1>
+      <h5 class="w3-center">SESION 2019/2020</h5>
+      <p class="w3-large">During my diploma, I got so much experience that very important for me. In my diploma, I have joined the student representative council. It was the second time for me to join the organization in UiTM. But it’s not problem to me because for me it was the new thing that I should to learn. It became a challenges for me because I to learn new thing.
+           Student Representative Council is not the simple organization or club. It was the organization that becomes the middle person between student and the top management. So must endure that any student voice should take action by top management. My position in SRC is sport and recreation exco. My scope of work is all about sport and recreation in UiTM. So I need to ensure all the voice from student must be focus by top management.
+            My contribution in SRC is getting the permission for student to use the facility during night. It was one of my achievements because before this student are not allowed to play or use facility at night.</p>
+      
+    </div>
+  </div>
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col m6 w3-padding-large">
+        <h1 class="w3-center">INFORMA CLUB</h1>
+        <h5 class="w3-center">SESION 2019/2020</h5>
+        <p class="w3-large">Before I join the Student Representative council, I was joined academic club which is faculty club. INFORMA club is stand for information management club. 
+            I have been chosen to take the responsibility to be the president of the club. This was the first time for me to be choosing as the president of the club. But for me it was the best moment because
+             I can learn many things even I just take that responsibility only for 3 month before I join SRC. For me, this is the best experience because I want to be the active student in curriculum and not forget about academic.</p>
+      </div>
+    
+    <div class="w3-col l6 w3-padding-large">
+      <img src="image/me5.jpeg" class="w3-round w3-image w3-opacity-high" alt="Menu" style="width:100%" height="500px">
+    </div>
+  </div>
+  <div class="video-ex">
+    <h2>MONTAGE OF STUDENT REPRESENTATIVE COUNCIL</h2>
+    <embed src="video/mpp.mp4" autoplay="true" width="100%" height="400px"><embed>
+  </div>
+  <div class="footer"
+  <footer id="main-footer">
+  <p>This website is purposely for IMD311 Individual assingment</p>
+  </footer>
+  <footer id="mid-footer">
+  <ul>
+    <li><a href="https://www.instagram.com/zairis_/"><img src="image/insta.png"></a></li>
+    <li><a href="https://www.facebook.com/muhammad zaidi/"><img src="image/fb.png"></a></li>
+   
+ 
+  </ul>
+  <footer id="end-footer">
+  <p>Recommended Browser For This Website Is Google Chrome,Internet Explorer & Firefox</p>
+  <p>Reference by w3schools</p>
+  
+    </body>
+    </html>
